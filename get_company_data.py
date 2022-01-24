@@ -44,10 +44,10 @@ def output_time_options():
 
 
 # Extracts company data to cvs file
+
 def write_to_cvs(t, p):
     df = get_market_data(t, p)
     df.to_csv(f'{t}.csv', header=True, index=None, sep=',', mode='a')
-    return df
 
 
 def get_graph(t):
@@ -101,11 +101,12 @@ def print_select2():
     select = str(input("Would you like to view another stock? Y or N")).upper()
     return select
 
+
 def print_select3(ticker):
     options = output_time_options()
     select = str(input("Enter the letter that corresponds with the time frame: ")).upper()
-    time_frame = select
-    print(get_market_data(ticker, options[select]))
+    time_frame = options[select]
+    print(get_market_data(ticker, time_frame))
     select = str(input("Would you like to export data to cvs? Y or N: ")).upper()
     if select == 'Y':
         write_to_cvs(ticker, time_frame)
@@ -119,6 +120,7 @@ def print_select4():
         select = 'B'
     return select
 
+
 def get_ticker():
     ticker = str(input("Enter Company Ticker Symbol: ")).upper()
     return ticker
@@ -129,7 +131,7 @@ def market_menu():
     select = print_select1()
     if select == 'A':
         format_company_data(ticker)
-    select = print_select4()
+    select = print_select4()  ##sequential flow error in returning to main for later correction
     if select == 'B':
         print_select3(ticker)
         print_predict()
