@@ -6,7 +6,8 @@ The program uses Deep Learning to train a LSTM model using past stock data to pl
 
 Demo Below 
 
-https://user-images.githubusercontent.com/54919031/150721643-28c186af-49ca-43f4-8dd2-e1c330aa581e.mov
+https://user-images.githubusercontent.com/54919031/150721975-94e77773-7f4e-47b5-a873-e958a3320467.mov
+
 
 Once the model completes training, a graph plot will appear
 <img width="641" alt="Screen Shot 2022-01-23 at 10 28 55 PM" src="https://user-images.githubusercontent.com/54919031/150721759-1a6e80e3-e24d-4dd6-b27e-98a1b2c7cce4.png">
