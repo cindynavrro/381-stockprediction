@@ -1,4 +1,4 @@
-# 381-stockprediction!
+# 381-stockprediction
 ## 381: Intro to Python Programming - Project
 
 The program that allows you to view company data from all tickers using YH Finance API and extract stock data for a given time frame into a csv file. 
