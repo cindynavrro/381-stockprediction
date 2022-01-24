@@ -1,9 +1,8 @@
-# 381-stockprediction!
+# 381-stockprediction
 ## 381: Intro to Python Programming - Project
 
 The program that allows you to view company data from all tickers using YH Finance API and extract stock data for a given time frame into a csv file. 
 The program uses Deep Learning techniques of RNN, Recurrent Neural Networks, to train a LSTM, long short-term memory, model to generate a prediction model and forecast the following days stock price.
-
 
 
 Demo Below 
