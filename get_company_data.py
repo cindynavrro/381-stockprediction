@@ -106,7 +106,7 @@ def print_select3(ticker):
     select = str(input("Enter the letter that corresponds with the time frame: ")).upper()
     time_frame = select
     print(get_market_data(ticker, options[select]))
-    select = str(input("Would you like to export data to cvs? Y or N: "))
+    select = str(input("Would you like to export data to cvs? Y or N: ")).upper()
     if select == 'Y':
         write_to_cvs(ticker, time_frame)
         print("Data saved to CVS!")
